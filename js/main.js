@@ -24,7 +24,17 @@ buscarEstudiantePorId(2)
     console.error(error);
   });
 
-buscarEstudiantePorId(10)
+buscarEstudiantePorId(1)
+  .then(estudiante => {
+    console.log(`Nombre: ${estudiante.nombre}, Edad: ${estudiante.edad}`);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+
+
+  buscarEstudiantePorId(10)
   .then(estudiante => {
     console.log(`Nombre: ${estudiante.nombre}, Edad: ${estudiante.edad}`);
   })
